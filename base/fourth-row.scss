@@ -10,11 +10,19 @@
 
   .small-whats-hot1, .small-whats-hot2, .small-whats-hot3 {
     @include grid-column(4);
-    // height: 30vh;
-    // margin-top: 20px;
     height: 35vh;
     background-color: white;
     box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.4);
+
+    @include xs-breakpoint {
+      @include grid-column(12);
+        margin-bottom: 10%;
+    }
+
+    @include small-breakpoint {
+      @include grid-column(12);
+      margin-bottom: 10%;
+    }
   }
 
   .small-whats-hot1 .image-div {
@@ -44,9 +52,5 @@
     margin-bottom: 25px;
   }
 
-  @include medium-breakpoint {
-    .text-div {
-      font-size: 18px;
-    }
-  }
+
 }

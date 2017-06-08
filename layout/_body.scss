@@ -13,3 +13,11 @@ img {
   display: table;
   clear: both;
 }
+
+// whats hot extend
+%vids-whatshot {
+  @include grid-column(4);
+  @include grid-shift(2);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}

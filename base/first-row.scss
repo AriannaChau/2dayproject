@@ -3,36 +3,46 @@
 #first-row {
   @include grid-column(12);
   height: 80vh;
-  // background-color: blue;
 }
 
 .sidebars {
   height: 80vh;
-  // background-color: yellow;
   @include grid-column(3);
   margin-top: 20px;
   overflow: auto;
   overflow-y: hidden;
 
+  @include xs-breakpoint {
+    @include grid-column(12);
+    background-color: blue;
+  }
+
   @include small-breakpoint {
     @include grid-column(12);
+    background-color: red;
+  }
 
-
+  @include medium-breakpoint {
+    background-color: green;
   }
 }
 
 .top-stories {
   @include grid-column(4);
+  overflow: auto;
+  overflow-y: hidden;
+
+  @include xs-breakpoint {
+    @include grid-column(12);
+  }
 
   @include small-breakpoint {
     @include grid-column(12);
-
   }
 }
 
 .subarticles {
   border-bottom: 1px solid grey;
-  // height: 250px;
   min-height: 10vh;
   padding-bottom: 1vh;
   overflow: auto;
@@ -42,14 +52,27 @@
     width: auto;
     height: 10vh;
     max-height: 200px;
+    max-width: 120px;
     float: left;
     padding: 0vw 1vw 1vh 1vw;
     padding-top: 20px;
   }
 }
 // barista man
+
 .main-img {
+  height: 25vh;
+  background-color: white;
   border-bottom: 1px solid grey;
+  @extend .caption;
+}
+.main-img .image-div {
+  background-image: url('img/barista.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+  margin-bottom: 30px;
 }
 
  // trex
@@ -76,20 +99,26 @@
     left: 3%;
     color: white;
     text-shadow: 2px 2px #000;
+
+    @include xs-breakpoint {
+    top: 12%;
+    }
+  }
+
+  @include xs-breakpoint {
+    @include grid-column(12);
+  }
+
+  @include small-breakpoint {
+    @include grid-column(12);
+    p {
+      top: 6%;
+    }
   }
 
   @include medium-breakpoint {
     p {
       top: 10%;
-
-    }
-  }
-
-  @include small-breakpoint {
-    @include grid-column(12);
-
-    p {
-      top: 6%;
     }
   }
 }

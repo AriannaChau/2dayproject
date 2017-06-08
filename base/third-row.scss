@@ -1,3 +1,8 @@
+// whats hot
+.whats-hot-1, .whats-hot-2 {
+  @extend %vids-whatshot;
+}
+
 // third row
 #third-row {
   @include grid-column(12);
@@ -8,10 +13,19 @@
   }
 
   .whats-hot-1, .whats-hot-2 {
-    @extend .vids-whatshot;
     height: 35vh;
     background-color: white;
     box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.4);
+
+    @include xs-breakpoint {
+      @include grid-column(12);
+      @include grid-shift(0);
+    }
+
+    @include small-breakpoint {
+      @include grid-column(6);
+      @include grid-shift(0);
+    }
   }
 
   .whats-hot-1 .image-div {
@@ -31,13 +45,4 @@
     height: 70%;
     margin-bottom: 25px;
   }
-}
-
-
-// whats hot extend
-.vids-whatshot {
-  @include grid-column(4);
-  @include grid-shift(2);
-  margin-top: 20px;
-  margin-bottom: 50px;
 }
