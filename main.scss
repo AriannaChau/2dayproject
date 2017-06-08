@@ -1,11 +1,13 @@
+@import 'components/variables';
+@import 'components/mixins';
+
 @import 'stylesheets/bourbon/bourbon';
 @import 'stylesheets/neat/neat';
 @import 'layout/header/navbar';
 @import 'layout/body';
 @import 'base/normalize';
 @import 'base/typography';
-@import 'components/variables';
-@import 'components/mixins';
+@import 'layout/header/hero';
 
 @import 'base/first-row';
 @import 'base/second-row';

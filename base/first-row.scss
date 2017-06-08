@@ -14,16 +14,16 @@
 
   @include xs-breakpoint {
     @include grid-column(12);
-    background-color: blue;
+
   }
 
   @include small-breakpoint {
     @include grid-column(12);
-    background-color: red;
+
   }
 
   @include medium-breakpoint {
-    background-color: green;
+    
   }
 }
 

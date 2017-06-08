@@ -1,10 +1,55 @@
 .nav {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
   width: 100%;
   height: 80px;
   background-color: black;
-  color: white; }
+  color: white;
+  margin: 0; }
   .nav h1 {
     margin: 0; }
+
+.hamburger {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  float: left;
+  padding-top: 20px;
+  font-size: 30px; }
+  @media only screen and (max-width: 690px) {
+    .hamburger {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px; } }
+
+.page-title {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+  padding-top: 20px; }
+  @media only screen and (max-width: 690px) {
+    .page-title {
+      width: calc(75% - 35px);
+      float: left;
+      margin-left: 20px;
+      text-align: right; } }
+
+.social-icons {
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  text-align: right; }
+  .social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 30px;
+    padding-right: 5px; }
+  @media only screen and (max-width: 690px) {
+    .social-icons {
+      display: none; } }
 
 body {
   font-family: Maven Pro; }
@@ -450,6 +495,34 @@ a {
   .subtitles h1 {
     background-color: #50c1a1; }
 
+.header-container {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("img/cozy.jpg");
+  position: relative;
+  margin: 0;
+  width: 100%; }
+  .header-container h1 {
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+    left: 3%; }
+  .header-container p {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: white;
+    text-shadow: 2px 2px #000; }
+    @media only screen and (max-width: 690px) {
+      .header-container p {
+        top: 30%; } }
+
 #first-row {
   width: calc(100% - 40px);
   float: left;
@@ -468,17 +541,12 @@ a {
     .sidebars {
       width: calc(100% - 40px);
       float: left;
-      margin-left: 20px;
-      background-color: blue; } }
+      margin-left: 20px; } }
   @media only screen and (min-width: 691px) and (max-width: 1031px) {
     .sidebars {
       width: calc(100% - 40px);
       float: left;
-      margin-left: 20px;
-      background-color: red; } }
-  @media only screen and (min-width: 1032px) and (max-width: 1325px) {
-    .sidebars {
-      background-color: green; } }
+      margin-left: 20px; } }
 
 .top-stories {
   width: calc(33.33333% - 26.66667px);
