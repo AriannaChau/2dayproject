@@ -1,3 +1,4 @@
+
 // first row
 #first-row {
   @include grid-column(12);
@@ -12,10 +13,21 @@
   margin-top: 20px;
   overflow: auto;
   overflow-y: hidden;
+
+  @include small-breakpoint {
+    @include grid-column(12);
+
+
+  }
 }
 
 .top-stories {
   @include grid-column(4);
+
+  @include small-breakpoint {
+    @include grid-column(12);
+
+  }
 }
 
 .subarticles {
@@ -64,5 +76,20 @@
     left: 3%;
     color: white;
     text-shadow: 2px 2px #000;
+  }
+
+  @include medium-breakpoint {
+    p {
+      top: 10%;
+
+    }
+  }
+
+  @include small-breakpoint {
+    @include grid-column(12);
+
+    p {
+      top: 6%;
+    }
   }
 }

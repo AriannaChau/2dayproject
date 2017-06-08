@@ -1,0 +1,11 @@
+@mixin small-breakpoint {
+  @media #{$small-breakpoint} {
+    @content;
+  }
+}
+
+@mixin medium-breakpoint {
+  @media #{$medium-breakpoint} {
+    @content;
+  }
+}
