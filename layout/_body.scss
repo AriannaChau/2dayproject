@@ -1,5 +1,6 @@
 body {
   font-family: Maven Pro;
+  // background-color: #EBEBEB;
 }
 
 img {
@@ -11,101 +12,4 @@ img {
   content: "";
   display: table;
   clear: both;
-}
-
-// header
-.header-container {
-  height: 45vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('img/cozy.jpg');
-}
-
-// first row
-#first-row {
-  @include grid-column(12);
-  height: 80vh;
-  // background-color: blue;
-}
-
-.sidebars {
-  height: 80vh;
-  // background-color: yellow;
-  @include grid-column(3);
-  margin-top: 20px;
-  overflow: auto;
-  overflow-y: hidden;
-}
-
-.top-stories {
-  @include grid-column(4);
-}
-
-.subarticles {
-  border-bottom: 1px solid grey;
-  // height: 250px;
-  min-height: 10vh;
-  padding-bottom: 1vh;
-  overflow: auto;
-  overflow-x: hidden;
-
-  img {
-    width: auto;
-    height: 10vh;
-    max-height: 200px;
-    float: left;
-    padding: 0vw 1vw 1vh 1vw;
-  }
-}
-// barista man
-.main-img {
-  border-bottom: 1px solid grey;
-}
-
- // trex
-.main-content {
-  @include grid-column(5);
-  margin-top: 20px;
-  height: 80vh;
-  background-image: url('img/trex.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-// second row
-#second-row {
-  @include grid-column(12);
-}
-.top-vid-1, .top-vid-2 {
-  @extend .vids-whatshot;
-}
-
-.vids-whatshot {
-  background-color: purple;
-  height: 25vh;
-  @include grid-column(4);
-  @include grid-shift(2);
-  margin-top: 20px;
-}
-
-// third row
-#third-row {
-  @include grid-column(12);
-}
-.whats-hot-1, .whats-hot-2 {
-  @extend .vids-whatshot;
-  background-color: red;
-}
-
-// fourth row
-#fourth-row {
-  @include grid-column(12);
-}
-.small-whats-hot1, .small-whats-hot2, .small-whats-hot3 {
-  @include grid-column(4);
-  background-color: green;
-  height: 30vh;
-  margin-top: 20px;
 }

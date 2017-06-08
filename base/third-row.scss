@@ -1,0 +1,43 @@
+// third row
+#third-row {
+  @include grid-column(12);
+  @extend .caption;
+
+  p {
+    font-size: 14px;
+  }
+
+  .whats-hot-1, .whats-hot-2 {
+    @extend .vids-whatshot;
+    height: 35vh;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.4);
+  }
+
+  .whats-hot-1 .image-div {
+    background-image: url('img/science.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+
+  .whats-hot-2 .image-div {
+    background-image: url('img/pride.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+}
+
+
+// whats hot extend
+.vids-whatshot {
+  @include grid-column(4);
+  @include grid-shift(2);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}

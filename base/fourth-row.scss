@@ -1,0 +1,46 @@
+// fourth row
+#fourth-row {
+  @include grid-column(12);
+  @extend .caption;
+  margin-bottom: 25px;
+
+  p {
+    font-size: 14px;
+  }
+
+  .small-whats-hot1, .small-whats-hot2, .small-whats-hot3 {
+    @include grid-column(4);
+    // height: 30vh;
+    // margin-top: 20px;
+    height: 35vh;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.4);
+  }
+
+  .small-whats-hot1 .image-div {
+    background-image: url('img/whale.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+
+  .small-whats-hot2 .image-div {
+    background-image: url('img/yoga.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+
+  .small-whats-hot3 .image-div {
+    background-image: url('img/pup.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+}

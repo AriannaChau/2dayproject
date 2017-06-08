@@ -1,5 +1,20 @@
-.titles {
+h1 {
+  font-family: 'Headland One';
+}
 
+a {
+  color: #f83371;
+}
+
+.caption {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Headland One';
+  margin-top: 20px;
+}
+
+.titles {
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -7,7 +22,17 @@
   font-style: italic;
   h1 {
     background-color: #f83371;
-    width: 50%;
     margin: auto;
+      }
+}
+
+.subtitles {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1vh;
+  font-style: italic;
+  h1 {
+    background-color: #50c1a1;
   }
 }

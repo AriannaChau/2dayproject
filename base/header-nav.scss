@@ -1,0 +1,25 @@
+
+.header-container {
+  height: 45vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('img/cozy.jpg');
+  position: relative;
+
+  h1 {
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+    left: 3%;
+  }
+
+  p {
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: white;
+    text-shadow: 2px 2px #000;
+  }
+}

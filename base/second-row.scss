@@ -1,0 +1,39 @@
+// second row
+#second-row {
+  @include grid-column(12);
+  @extend .caption;
+
+  p {
+    font-size: 14px;
+  }
+
+  .top-vid-1, .top-vid-2 {
+    height: 35vh;
+    background-color: white;
+    box-shadow: 0 0.125rem 0.1875rem 0 rgba(0,0,0,.4);
+  }
+
+  .top-vid-1 .image-div {
+    background-image: url('img/space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+
+  .top-vid-2 .image-div {
+    background-image: url('img/ew.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px;
+  }
+}
+
+
+// top videos
+.top-vid-1, .top-vid-2 {
+  @extend .vids-whatshot;
+}
