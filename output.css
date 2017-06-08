@@ -739,27 +739,18 @@ a {
         float: left;
         margin-left: 20px;
         margin-bottom: 10%; } }
+  #fourth-row .small-whats-hot, #fourth-row .small-whats-hot1 .image-div, #fourth-row .small-whats-hot2 .image-div, #fourth-row .small-whats-hot3 .image-div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+    margin-bottom: 25px; }
   #fourth-row .small-whats-hot1 .image-div {
-    background-image: url("img/whale.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px; }
+    background-image: url("img/whale.jpg"); }
   #fourth-row .small-whats-hot2 .image-div {
-    background-image: url("img/yoga.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px; }
+    background-image: url("img/yoga.jpg"); }
   #fourth-row .small-whats-hot3 .image-div {
-    background-image: url("img/pup.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px; }
+    background-image: url("img/pup.jpg"); }
 
 .header-container {
   height: 45vh;

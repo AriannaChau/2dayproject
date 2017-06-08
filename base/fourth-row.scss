@@ -25,31 +25,27 @@
     }
   }
 
+.small-whats-hot {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70%;
+  margin-bottom: 25px;
+}
+
   .small-whats-hot1 .image-div {
     background-image: url('img/whale.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px;
+    @extend .small-whats-hot;
   }
 
   .small-whats-hot2 .image-div {
     background-image: url('img/yoga.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px;
+    @extend .small-whats-hot;
   }
 
   .small-whats-hot3 .image-div {
     background-image: url('img/pup.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70%;
-    margin-bottom: 25px;
+    @extend .small-whats-hot;
   }
 
 
